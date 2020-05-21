@@ -16,6 +16,7 @@ namespace NinjaQuest.Controllers
 
         }
         //Get One usually by ID
+        //{id} is a route parameter
         [HttpGet("{id}")]
         public void Get(int id)
         {
