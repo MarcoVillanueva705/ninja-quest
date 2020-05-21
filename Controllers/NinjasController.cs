@@ -11,6 +11,7 @@ namespace NinjaQuest.Controllers
 
         //Get All
         [HttpGet]
+        //method set as void b/c not returning anything
         public void Get()
         {
 
