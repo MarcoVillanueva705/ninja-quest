@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using NinjaQuest.Models;
 
 namespace NinjaQuest.Controllers
 {
@@ -13,10 +15,19 @@ namespace NinjaQuest.Controllers
         //Get All
         [HttpGet]
         //method set as void b/c not returning anything
-        public void Get()
+       
+       //If you're going to return an ActionResult,
+       //you have to state what type it's going to be
+       //Here we want to iterate through type Quest, which
+       //is an array of objects
+        public ActionResult <IEnumerable<Quest>> Get()
         {
             // return an array of type Quests
             //return Quests[]
+
+            //returns status code 200, acccepts dynamic object
+            //of any type
+            return Ok(new Quest[] { new Quest() });
         }
         //Get One usually by ID
         //{id} is a route parameter
@@ -29,13 +40,16 @@ namespace NinjaQuest.Controllers
         [HttpPost]
         public void Create()
         {
+            //create failed
+            //bad data
+            BadRequest(new { error = "bad data"});
 
         }
         //Edit One
         [HttpPut("{id}")]
         public void Update(int id)
         {
-
+            Unauthorized("you did not create this ojbect");
         }
         //Delete One
         [HttpDelete("{id}")]

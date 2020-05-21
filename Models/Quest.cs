@@ -1,5 +1,5 @@
 namespace NinjaQuest.Models{
-    public class NinjaQuest
+    public class Quest
     {
         public int Id { get; set; }
         public string Title { get; set; }
