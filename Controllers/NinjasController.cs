@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace NinjaQuest.Controllers
 {
+    //magic strings[controller]
     [Route("api/[controller")]
     [ApiController]
     public class NinjasController: ControllerBase
