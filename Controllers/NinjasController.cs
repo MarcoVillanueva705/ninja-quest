@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace NinjaQuest.Controllers
 {
+    //in the route brackets, data attribute for the route
     //magic strings[controller]
     [Route("api/[controller")]
     [ApiController]
