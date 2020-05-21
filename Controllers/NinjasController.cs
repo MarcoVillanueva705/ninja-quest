@@ -15,7 +15,8 @@ namespace NinjaQuest.Controllers
         //method set as void b/c not returning anything
         public void Get()
         {
-
+            // return an array of type Quests
+            //return Quests[]
         }
         //Get One usually by ID
         //{id} is a route parameter
