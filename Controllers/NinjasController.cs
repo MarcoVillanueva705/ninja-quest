@@ -37,6 +37,7 @@ namespace NinjaQuest.Controllers
 
         }
         //Create One
+        //Post route
         [HttpPost]
         public void Create()
         {
