@@ -57,6 +57,6 @@ namespace NinjaQuest.Controllers
         public void Delete (int id)
         {
 
-        }
+        }//SQL connection
     }
 }
