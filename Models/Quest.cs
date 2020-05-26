@@ -7,3 +7,4 @@ namespace NinjaQuest.Models{
         public bool Completed { get; set; }
     }
 }
+//Created quest table in SQL
