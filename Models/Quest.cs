@@ -8,3 +8,4 @@ namespace NinjaQuest.Models{
     }
 }
 //Created quest table in SQL
+//added quests to the SQL table
