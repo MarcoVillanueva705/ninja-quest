@@ -6,3 +6,4 @@ namespace NinjaQuest.Models
         public string Name { get; set; }
     }
 }//created Ninja table in SQL
+//altered table ninjas
