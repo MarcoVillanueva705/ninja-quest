@@ -15,9 +15,11 @@ namespace NinjaQuest
 {
     public class Startup
     {
+        string _connectionString;
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            _connectionString = Configuration.GetConnectionString("MySql");
         }
 
         public IConfiguration Configuration { get; }
