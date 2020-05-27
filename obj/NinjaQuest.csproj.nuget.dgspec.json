@@ -38,6 +38,14 @@
           "dependencies": {
             "Dapper": {
               "target": "Package",
+              "version": "[2.0.35, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[0.66.0, )"
+            },
+            "bcrypt.net-core": {
+              "target": "Package",
               "version": "(, )"
             }
           },
