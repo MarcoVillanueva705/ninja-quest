@@ -32,7 +32,7 @@ namespace NinjaQuest
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Latest);
 
             services.AddControllers();
-
+            //registering new service, execute DBContext from line 40
             services.AddTransient<IDbConnection>(x => CreateDBContext());
         }
 
