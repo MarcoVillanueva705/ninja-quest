@@ -36,6 +36,7 @@ namespace NinjaQuest
             services.AddTransient<IDbConnection>(x => CreateDBContext());
         }
 
+        //establish connection to MySQL database using connection string
         private IDbConnection CreateDBContext()
             {
                 IDbConnection connection = new MySqlConnection(_connectionString);
