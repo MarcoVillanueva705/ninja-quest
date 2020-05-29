@@ -12,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MySql.Data.MySqlClient;
+using NinjaQuest.Repositories;
 
 namespace NinjaQuest
 {
@@ -34,6 +35,8 @@ namespace NinjaQuest
             services.AddControllers();
             //registering new service, execute DBContext from line 40
             services.AddTransient<IDbConnection>(x => CreateDBContext());
+            //
+            services.AddTransient<NinjaRepository>();
         }
 
         //establish connection to MySQL database using connection string
