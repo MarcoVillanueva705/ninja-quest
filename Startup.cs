@@ -35,7 +35,8 @@ namespace NinjaQuest
             services.AddControllers();
             //registering new service, execute DBContext from line 40
             services.AddTransient<IDbConnection>(x => CreateDBContext());
-            //
+            //every time we need the ninja repo, it needs a connection
+            //when connection to ninja repo terminated, connection to db ends as well  
             services.AddTransient<NinjaRepository>();
         }
 
