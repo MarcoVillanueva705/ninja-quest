@@ -12,7 +12,7 @@ namespace NinjaQuest.Repositories
         {
             _db = db;
         }
-
+        //create Ninja and put into SQL db via Dapper
         public Ninja Create(string name) 
         {
             _db.Execute("INSERT INTO ninjas (name) VALUES (@name)", new { name });
