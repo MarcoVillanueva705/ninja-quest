@@ -14,6 +14,7 @@ namespace NinjaQuest.Repositories
         }
         //create Ninja and put into SQL db via Dapper
         public Ninja Create(string name) 
+        //create will be handled in next vid
         {
             _db.Execute("INSERT INTO ninjas (name) VALUES (@name)", new { name });
         }
