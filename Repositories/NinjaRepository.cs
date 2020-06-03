@@ -21,6 +21,9 @@ namespace NinjaQuest.Repositories
             INSERT INTO ninjas (name) VALUES (@name); 
             SELECT LAST_INSERT_ID()", new {name}
             );
+
+            //return the ninja created
+            return new Ninja() { Name = name, Id = id}
         }
     }
 }
