@@ -17,13 +17,13 @@ namespace NinjaQuest.Repositories
         //create will be handled in next vid
         {
             //run many sql commands and return w/e last sql command returns
-            _db.ExecuteScalar<int>(@"
+            int id = _db.ExecuteScalar<int>(@"
             INSERT INTO ninjas (name) VALUES (@name); 
             SELECT LAST_INSERT_ID()", new {name}
             );
 
             //return the ninja created
-            return new Ninja() { Name = name, Id = id}
+            return new Ninja() { Name = name, Id = id};
         }
     }
 }
