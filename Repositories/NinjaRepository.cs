@@ -26,5 +26,13 @@ namespace NinjaQuest.Repositories
             //return the ninja created
             return new Ninja() { Name = name, Id = id};
         }
+        public bool Delete(int id)
+        {
+            int success = _db.Execute(@"
+            DELETE FROM ninjas WHERE id = @id
+            ", new {id});
+        //successful delete if more than 0 lines deleted from db
+            return success > 0;
+        }
     }
 }
