@@ -1,4 +1,5 @@
 using System.Data;
+using System.Linq;
 using Dapper;
 using NinjaQuest.Models;
 //using
