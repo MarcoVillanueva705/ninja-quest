@@ -52,5 +52,6 @@ namespace NinjaQuest.Repositories
             return _db.Query<Ninja>(@"
             SELECT * FROM ninjas").ToList();
         }
+        // ** left off after CRUD vid ** //
     }
 }
