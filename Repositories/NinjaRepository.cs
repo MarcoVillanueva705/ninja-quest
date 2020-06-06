@@ -34,5 +34,12 @@ namespace NinjaQuest.Repositories
         //successful delete if more than 0 lines deleted from db
             return success > 0;
         }
+
+        public Knight FindOneById(int id)
+        {
+            _db.Query<Knight>(@"
+            SELECT * FROM knights WHERE id = @id",
+            new {id}).FirstOrDefault();
+        }
     }
 }
