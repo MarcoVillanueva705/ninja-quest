@@ -44,5 +44,11 @@ namespace NinjaQuest.Repositories
             //query will return a list
             new {id}).FirstOrDefault();
         }
+
+        public List<Ninja> Find()
+        {
+            return _db.Query<Ninja>(@"
+            SELECT * FROM ninjas").ToList();
+        }
     }
 }
