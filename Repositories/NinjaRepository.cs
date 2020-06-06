@@ -37,8 +37,10 @@ namespace NinjaQuest.Repositories
 
         public Ninja FindOneById(int id)
         {
+            //query db and find specific ninja
             _db.Query<Ninja>(@"
             SELECT * FROM knights WHERE id = @id",
+            //query will return a list
             new {id}).FirstOrDefault();
         }
     }
