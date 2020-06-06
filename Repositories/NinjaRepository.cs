@@ -35,9 +35,9 @@ namespace NinjaQuest.Repositories
             return success > 0;
         }
 
-        public Knight FindOneById(int id)
+        public Ninja FindOneById(int id)
         {
-            _db.Query<Knight>(@"
+            _db.Query<Ninja>(@"
             SELECT * FROM knights WHERE id = @id",
             new {id}).FirstOrDefault();
         }
