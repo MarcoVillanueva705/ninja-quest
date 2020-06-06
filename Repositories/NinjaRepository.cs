@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using Dapper;
@@ -27,6 +28,7 @@ namespace NinjaQuest.Repositories
             //return the ninja created
             return new Ninja() { Name = name, Id = id};
         }
+        //delete a ninja by id
         public bool Delete(int id)
         {
             int success = _db.Execute(@"
