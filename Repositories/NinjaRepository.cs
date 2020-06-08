@@ -53,5 +53,6 @@ namespace NinjaQuest.Repositories
             SELECT * FROM ninjas").ToList();
         }
         // ** left off after CRUD vid ** //
+        // ** learning docker ** //
     }
 }
