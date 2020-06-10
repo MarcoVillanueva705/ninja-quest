@@ -54,5 +54,6 @@ namespace NinjaQuest.Repositories
         }
         // ** left off after CRUD vid ** //
         // ** learning docker ** //
+        //** left off talking about services
     }
 }
