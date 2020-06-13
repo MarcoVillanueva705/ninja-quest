@@ -20,5 +20,10 @@ namespace NinjaQuest.Services
             //in _repo too
             return _repo.Create(name);
         }
+
+        public bool Delete(int id)
+        {
+            return _repo.Delete(id);
+        }
     }
 }
