@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using NinjaQuest.Models;
 using NinjaQuest.Repositories;
 
@@ -29,6 +30,11 @@ namespace NinjaQuest.Services
         public Ninja FindById(int id)
         {
             return _repo.FindOneById(id);
+        }
+
+        public List<Ninja> Find()
+        {
+            return _repo.Find();
         }
     }
 }
