@@ -25,5 +25,10 @@ namespace NinjaQuest.Services
         {
             return _repo.Delete(id);
         }
+
+        public Ninja FindById(int id)
+        {
+            return _repo.FindOneById(id);
+        }
     }
 }
