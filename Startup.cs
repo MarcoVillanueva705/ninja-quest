@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MySql.Data.MySqlClient;
 using NinjaQuest.Repositories;
+using NinjaQuest.Services;
 
 namespace NinjaQuest
 {
@@ -38,6 +39,7 @@ namespace NinjaQuest
             //every time we need the ninja repo, it needs a connection
             //when connection to ninja repo terminated, connection to db ends as well  
             services.AddTransient<NinjaRepository>();
+            services.AddTransient<NinjasService>();
         }
 
         //establish connection to MySQL database using connection string
