@@ -15,7 +15,8 @@ namespace NinjaQuest.Services
 
         public Ninja Create(string name)
         {
-            //_repo is the NinjaRepository, Create is the method
+            //_repo is the NinjaRepository accessed
+            //through services; Create is the method
             //in _repo too
             return _repo.Create(name);
         }
