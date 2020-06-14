@@ -42,9 +42,9 @@ namespace NinjaQuest.Controllers
         //Get One usually by ID
         //{id} is a route parameter
         [HttpGet("{id}")]
-        public void Get(int id)
+        public ActionResult<Ninja> Get(int id)
         {
-
+            return Ok(_service.FindById(id));
         }
         //Create One
         //Post route
