@@ -49,11 +49,15 @@ namespace NinjaQuest.Controllers
         //Create One
         //Post route
         [HttpPost]
-        public void Create()
+        public ActionResult<Ninja> Create([FromBody] Ninja ninja)
         {
+            return Ok(_service.Create(ninja.Name));
+            {
+                
+            }
             //create failed
             //bad data
-            BadRequest(new { error = "bad data"});
+            // BadRequest(new { error = "bad data"});
 
         }
         //Edit One
