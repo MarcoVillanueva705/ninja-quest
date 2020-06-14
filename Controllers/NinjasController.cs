@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using NinjaQuest.Models;
+using NinjaQuest.Services;
 
 namespace NinjaQuest.Controllers
 {
@@ -10,6 +11,8 @@ namespace NinjaQuest.Controllers
     [ApiController]
     public class NinjasController: ControllerBase
     {
+        private readonly NinjasService _service;
+
         //RESTful Standards
 
         //Get All
@@ -58,5 +61,10 @@ namespace NinjaQuest.Controllers
         {
 
         }//SQL connection
+
+        public NinjasController(NinjasService service)
+        {
+           _service = service; 
+        }
     }
 }
