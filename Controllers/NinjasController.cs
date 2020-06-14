@@ -64,9 +64,9 @@ namespace NinjaQuest.Controllers
         }
         //Delete One
         [HttpDelete("{id}")]
-        public void Delete (int id)
+        public ActionResult<bool> Delete (int id)
         {
-
+            return Ok(_service.Delete(id));
         }//SQL connection
 
         public NinjasController(NinjasService service)
