@@ -7,7 +7,12 @@ namespace NinjaQuest.Controllers
     
     public class QuestsController: ControllerBase
     {
-
+        //Get all
+        [HttpGet]
+        public void Get()
+        {
+            
+        }
     }
 
 }
