@@ -11,7 +11,14 @@ namespace NinjaQuest.Controllers
         [HttpGet]
         public void Get()
         {
-            
+
+        }
+
+        //Get one by ID
+        [HttpGet("{id}")]
+        public void Get(int id)
+        {
+
         }
     }
 
