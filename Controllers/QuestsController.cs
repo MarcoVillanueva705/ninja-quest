@@ -7,6 +7,7 @@ namespace NinjaQuest.Controllers
     
     public class QuestsController: ControllerBase
     {
-        
+
     }
+
 }
