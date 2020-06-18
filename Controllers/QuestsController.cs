@@ -20,6 +20,18 @@ namespace NinjaQuest.Controllers
         {
             //need post and put
         }
+        [HttpPost]
+        public void Create()
+        {
+
+        }
+
+        [HttpPut]
+        public void Post()
+        {
+            
+        }
+
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
