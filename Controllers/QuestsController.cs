@@ -26,8 +26,8 @@ namespace NinjaQuest.Controllers
 
         }
 
-        [HttpPut]
-        public void Post()
+        [HttpPut("{id}")]
+        public void Update(int id)
         {
             
         }
