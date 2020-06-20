@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using NinjaQuest.Services;
 
 namespace NinjaQuest.Controllers
 {
