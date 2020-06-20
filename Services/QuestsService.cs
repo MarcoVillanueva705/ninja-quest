@@ -1,9 +1,12 @@
-namespace NinjaQuest.Services{
+using NinjaQuest.Repositories;
+
+namespace NinjaQuest.Services
+{
     public class QuestsService
     {
         private readonly QuestsRepository _repo;
 
-        public QuestsServices(QuestsRepository repo)
+        public QuestsService(QuestsRepository repo)
         {
             _repo = repo;
         }
