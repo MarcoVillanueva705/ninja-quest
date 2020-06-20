@@ -7,6 +7,8 @@ namespace NinjaQuest.Controllers
     
     public class QuestsController: ControllerBase
     {
+        private readonly QuestsService _service;
+
         //Get all
         [HttpGet]
         public void Get()
@@ -36,6 +38,10 @@ namespace NinjaQuest.Controllers
         public void Delete(int id)
         {
 
+        }
+        public QuestsController (QuestsService service)
+        {
+            _service = service;
         }
     }
 
