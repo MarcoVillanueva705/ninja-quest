@@ -1,6 +1,9 @@
 namespace NinjaQuest.Services{
-    public class Quest
+    public class QuestsService
     {
-//fill out qs
+
     }
+    
+//fill out qs
+    
 }
