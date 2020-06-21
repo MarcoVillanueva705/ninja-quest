@@ -4,6 +4,8 @@ using NinjaQuest.Models;
 
 namespace NinjaQuest.Repositories
 {
+    //IRepo interface helps build out all the methods one needs
+    //for db queries etc.
     public class QuestsRepository : IRepository<Quest>
     {
         private readonly IDbConnection _db;
