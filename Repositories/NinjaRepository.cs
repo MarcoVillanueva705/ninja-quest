@@ -7,7 +7,7 @@ using NinjaQuest.Models;
 
 namespace NinjaQuest.Repositories
 {
-    public class NinjaRepository
+    public class NinjaRepository: IRepository<Ninja>
     {
         private readonly IDbConnection _db;
 
@@ -51,6 +51,16 @@ namespace NinjaQuest.Repositories
         {
             return _db.Query<Ninja>(@"
             SELECT * FROM ninjas").ToList();
+        }
+
+        public Ninja Create(Ninja t)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Ninja FindById(int id)
+        {
+            throw new System.NotImplementedException();
         }
         // ** left off after CRUD vid ** //
         // ** learning docker ** //
