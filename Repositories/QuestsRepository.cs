@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Data;
 using Dapper;
 using NinjaQuest.Models;
@@ -24,6 +25,22 @@ namespace NinjaQuest.Repositories
             ",quest);
             quest.Id = id;
             return quest;
+        }
+        //these methods appear when you implement I interface line 10
+
+        public bool Delete(int id)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public List<Quest> Find()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public Quest FindById(int id)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
