@@ -28,19 +28,20 @@ namespace NinjaQuest.Repositories
         }
         //these methods appear when you implement I interface line 10
 
+        //fill out methods
         public bool Delete(int id)
         {
-            throw new System.NotImplementedException();
+            return _db.Query<Quest>("");
         }
 
         public List<Quest> Find()
         {
-            throw new System.NotImplementedException();
+            return _db.Query<Quest>("");
         }
 
         public Quest FindById(int id)
         {
-            throw new System.NotImplementedException();
+            return _db.Query<Quest>("");
         }
     }
 }
