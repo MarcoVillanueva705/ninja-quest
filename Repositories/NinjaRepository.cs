@@ -16,17 +16,18 @@ namespace NinjaQuest.Repositories
             _db = db;
         }
         //create Ninja and put into SQL db via Dapper
-        public Ninja Create(string name) 
+        public Ninja Create(Ninja ninja) 
         //create will be handled in next vid
         {
             //run many sql commands and return w/e last sql command returns
             int id = _db.ExecuteScalar<int>(@"
             INSERT INTO ninjas (name) VALUES (@name); 
-            SELECT LAST_INSERT_ID()", new {name}
+            SELECT LAST_INSERT_ID()", ninja
             );
 
             //return the ninja created
-            return new Ninja() { Name = name, Id = id};
+            ninja.Id = id;
+            return ninja;
         }
         //delete a ninja by id
         public bool Delete(int id)
