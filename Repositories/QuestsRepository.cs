@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using Dapper;
 using NinjaQuest.Models;
 
@@ -39,7 +40,7 @@ namespace NinjaQuest.Repositories
 
         public List<Quest> Find()
         {
-            return _db.Query<Quest>("");
+            return _db.Query<Quest>("SELECT * FROM quests").ToList();
         }
 
         public Quest FindById(int id)
