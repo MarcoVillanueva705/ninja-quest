@@ -31,7 +31,10 @@ namespace NinjaQuest.Repositories
         //fill out methods
         public bool Delete(int id)
         {
-            return _db.Query<Quest>("");
+            int success = _db.Execute(@"
+            DELETE FROM quests WHERE id = @id
+            ", new { id });
+            return success > 0;
         }
 
         public List<Quest> Find()
