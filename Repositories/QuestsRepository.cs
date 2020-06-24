@@ -45,7 +45,5 @@ namespace NinjaQuest.Repositories
 
         public Quest FindById(int id)
         {
-            return _db.Query<Quest>("");
-        }
-    }
-}
+            //create new anonymous object and put id in there
+            return _db.Query<Quest>("SELECT * FROM quests WHERE id = @id", new { id }).FirstOrDefault();
