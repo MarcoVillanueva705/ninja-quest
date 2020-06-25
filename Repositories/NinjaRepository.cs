@@ -54,10 +54,10 @@ namespace NinjaQuest.Repositories
             SELECT * FROM ninjas").ToList();
         }
 
-        public Ninja Create(Ninja t)
-        {
-            throw new System.NotImplementedException();
-        }
+        // public Ninja Create(Ninja t)
+        // {
+        //     throw new System.NotImplementedException();
+        // }
 
         public Ninja FindById(int id)
         {
