@@ -51,7 +51,7 @@ namespace NinjaQuest.Controllers
         [HttpPost]
         public ActionResult<Ninja> Create([FromBody] Ninja ninja)
         {
-            return Ok(_service.Create(ninja.Name));
+            return Ok(_service.Create(ninja));
             {
                 
             }
