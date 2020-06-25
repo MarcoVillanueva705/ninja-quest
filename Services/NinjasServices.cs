@@ -14,12 +14,12 @@ namespace NinjaQuest.Services
             _repo = repo;
         }
 
-        public Ninja Create(string name)
+        public Ninja Create(Ninja ninja)
         {
             //_repo is the NinjaRepository accessed
             //through services; Create is the method
             //in _repo too
-            return _repo.Create(name);
+            return _repo.Create(ninja);
         }
 
         public bool Delete(int id)
