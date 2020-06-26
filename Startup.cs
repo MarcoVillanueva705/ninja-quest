@@ -40,6 +40,8 @@ namespace NinjaQuest
             //when connection to ninja repo terminated, connection to db ends as well  
 
             //register quests repo and services
+            services.AddTransient<QuestsRepository>();
+            services.AddTransient<QuestsService>();
             services.AddTransient<NinjaRepository>();
             services.AddTransient<NinjasService>();
         }
