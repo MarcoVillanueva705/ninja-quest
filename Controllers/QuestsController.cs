@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using NinjaQuest.Models;
 using NinjaQuest.Services;
 
 namespace NinjaQuest.Controllers
@@ -12,9 +14,9 @@ namespace NinjaQuest.Controllers
 
         //Get all
         [HttpGet]
-        public void Get()
+        public ActionResult<IEnumerable<Quest>> Get()
         {
-
+            //implement appropriate methods in quests service
         }
 
         //Get one by ID
