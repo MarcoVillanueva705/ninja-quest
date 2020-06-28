@@ -15,6 +15,9 @@ namespace NinjaQuest.Services
         }
         public Quest Create(Quest q)
         {
+            //business rule
+            //user == admin role
+            //allow the quest.completed
             return _repo.Create(q);
         }
         public List<Quest> Find()
