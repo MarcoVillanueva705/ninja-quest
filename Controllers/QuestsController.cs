@@ -28,9 +28,9 @@ namespace NinjaQuest.Controllers
             //need post and put
         }
         [HttpPost]
-        public void Create()
+        public ActionResult Create([FromBody] Quest q)
         {
-
+            return Ok(_service.Create(q));
         }
 
         [HttpPut("{id}")]
