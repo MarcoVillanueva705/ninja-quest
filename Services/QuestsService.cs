@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using NinjaQuest.Models;
 using NinjaQuest.Repositories;
 
@@ -14,6 +15,10 @@ namespace NinjaQuest.Services
         Quest Create(Quest q)
         {
             return _repo.Create(q);
+        }
+        public List<Quest> Find()
+        {
+            return _repo.Find();
         }
     }
     
