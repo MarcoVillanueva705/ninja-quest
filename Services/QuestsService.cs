@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using NinjaQuest.Models;
 using NinjaQuest.Repositories;
@@ -23,6 +24,11 @@ namespace NinjaQuest.Services
         public bool Delete(int id)
         {
             return _repo.Delete(id);
+        }
+
+        public Quest FindById(int id)
+        {
+            return _repo.FindById(id);
         }
     }
     
