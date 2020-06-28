@@ -1,3 +1,4 @@
+using NinjaQuest.Models;
 using NinjaQuest.Repositories;
 
 namespace NinjaQuest.Services
@@ -9,6 +10,10 @@ namespace NinjaQuest.Services
         public QuestsService(QuestsRepository repo)
         {
             _repo = repo;
+        }
+        Quest Create(Quest q)
+        {
+            return _repo.Create(q);
         }
     }
     
