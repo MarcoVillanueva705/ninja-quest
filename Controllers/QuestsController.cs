@@ -16,6 +16,7 @@ namespace NinjaQuest.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Quest>> Get()
         {
+            return Ok(_service.Find());
             //implement appropriate methods in quests service
         }
 

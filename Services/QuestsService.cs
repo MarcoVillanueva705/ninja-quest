@@ -12,13 +12,17 @@ namespace NinjaQuest.Services
         {
             _repo = repo;
         }
-        Quest Create(Quest q)
+        public Quest Create(Quest q)
         {
             return _repo.Create(q);
         }
         public List<Quest> Find()
         {
             return _repo.Find();
+        }
+        public bool Delete(int id)
+        {
+            return _repo.Delete(id);
         }
     }
     
