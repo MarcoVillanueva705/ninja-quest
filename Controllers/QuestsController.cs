@@ -22,8 +22,9 @@ namespace NinjaQuest.Controllers
 
         //Get one by ID
         [HttpGet("{id}")]
-        public void Get(int id)
+        public ActionResult<Quest> Get(int id)
         {
+            return Ok(_service.FindById(id));
             //need post and put
         }
         [HttpPost]
