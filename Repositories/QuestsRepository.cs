@@ -22,8 +22,8 @@ namespace NinjaQuest.Repositories
         {
            int id =  _db.ExecuteScalar<int>(@"
             INSERT INTO quests (title, description)
-            VALUES (@Title, @Description)
-            ",quest);
+            VALUES (@Title, @Description);
+            SELECT LAST_INSERT _ID()", quest);
             quest.Id = id;
             return quest;
         }
