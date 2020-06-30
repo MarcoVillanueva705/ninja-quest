@@ -21,7 +21,7 @@ namespace SinglyLinkedList
 
         public void displayNode()
         {
-            Console.WriteLine("<" + ">");
+            Console.WriteLine("<" +data+ ">");
         }
     }
 }
