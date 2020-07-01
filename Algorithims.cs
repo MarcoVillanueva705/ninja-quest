@@ -21,6 +21,14 @@ namespace SinglyLinkedList
         {
             return (first == null);
         }
+
+        public void insertFirst(int data)
+        {
+            Node newNode = new Node();
+            newNode.data = data;
+            newNode.next = first;
+            first = newNode;
+        }
     }
 
     public class Node 
