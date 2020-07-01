@@ -14,6 +14,15 @@ namespace SinglyLinkedList
         }
     }
 
+    public class SinglyLinkedList
+    {
+        private Node first;
+        public bool isEmpty()
+        {
+            return (first == null);
+        }
+    }
+
     public class Node 
     {
         public int data;
