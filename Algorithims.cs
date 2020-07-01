@@ -29,7 +29,14 @@ namespace SinglyLinkedList
             newNode.next = first;
             first = newNode;
         }
+        public Node deleteFirst()
+        {
+            Node temp = first;
+            first = first.next;
+            return temp;
+        }
     }
+
 
     public class Node 
     {
