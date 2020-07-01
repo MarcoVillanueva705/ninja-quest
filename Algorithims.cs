@@ -24,6 +24,7 @@ namespace SinglyLinkedList
 
         public void insertFirst(int data)
         {
+            //stopped here tues
             Node newNode = new Node();
             newNode.data = data;
             newNode.next = first;
