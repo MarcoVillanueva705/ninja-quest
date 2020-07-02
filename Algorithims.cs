@@ -36,6 +36,18 @@ namespace SinglyLinkedList
             first = first.next;
             return temp;
         }
+
+        public void displayList()
+        {
+            Console.WriteLine("List (first -- last)");
+            Node current = first;
+            while (current != null)
+            {
+                current.displayNode();
+                current = current.next; 
+            }
+            Console.WriteLine();
+        }
     }
 
 
