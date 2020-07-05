@@ -76,5 +76,6 @@ namespace SinglyLinkedList
             Console.WriteLine("<" +data+ ">");
         }
         //Linkedin Premium for C# and .NET programming course
+        //Collections store similar data
     }
 }
